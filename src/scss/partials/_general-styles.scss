@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #261e20;
+}
+
+a {
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    margin-bottom: 35px;
+
+    @include media(xl-max) {
+        font-size: 3.3vw;
+    }
+
+    @include media(md-max) {
+        font-size: 6vw;
+        text-align: center;
+    }
+}
+
+h2 {
+    font-size: 50px;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}

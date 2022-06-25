@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Flavor | Turnt Sauce
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
+        link(rel="stylesheet", href="assets/css/aos.css")
+        link(rel="stylesheet", href="assets/css/style.css")
+        style.
+            body {
+                background-image: url(assets/img/flavor-bg.svg);
+                width: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }    
+    body
+
+        div.turnt-sauce-overflow
+            //- ========== HEADER ============
+            //- ==============================
+            include includes/header
+
+            //- ========== MAIN ==============
+            //- ==============================
+            main#turnt-flavor
+                    
+                .section-hero
+                    .turnt-container
+                        .hero-content(data-aos="slide-left")
+                            .logo
+                                img(src="assets/img/turnt-logo.png", alt="")
+                            .main-image
+                                img(src="assets/img/home/hero-img.png", alt="hero-image")
+
+                            .turnt-items
+                                .item.cover-img(style="background-image: url('assets/img/turnt-item.png')" data-aos="zoom-in" data-aos-duration="300")
+                                    p PLANTS <br> BASED
+                                
+                                .item.cover-img(style="background-image: url('assets/img/turnt-item.png')" data-aos="zoom-in" data-aos-duration="500")
+                                    p SOY <br> FREE
+                                
+                                .item.cover-img(style="background-image: url('assets/img/turnt-item.png')" data-aos="zoom-in" data-aos-duration="700")
+                                    p DAIRY <br> FREE
+
+                            .stamp
+                                img(src="assets/img/flavor/Non-GMO-Stamp.jpg", alt="stamp")
+                        
+
+                        img.calories(src="assets/img/flavor/Under 100 Calories Icon@2x.png", alt="cheese" data-aos="slide-right" )
+                        img.buttle(src="assets/img/flavor/sauce-full.png", alt="pretzles" data-aos="slide-right")
+
+                .section-about
+                    .turnt-container
+                        .about-content
+                            h1(data-aos="fade-up") INGREDIENTS
+                            P(data-aos="fade-up") Water, Organic Amarillo Paste (Fresh Amarillo Chiles, Purified Water, Citric Acid), Nutritional Yeast, Sea Salt, Gluconic Acid, Coconut Milk Powder (Coconut Milk, Tapioca Maltodextrin, Gum Acacia), Konjac Root Powder (Amorphophallus konjac), Natural Flavors, Onion Powder, Organic Habaneros, Garlic Powder.
+
+                            h1(data-aos="fade-up") NUTRITIONAL FACTS
+                            img.calories-fact(src="assets/img/flavor/nutrition-facts.jpg", alt="nutrition facts" data-aos="fade-up")
+
+                            h1(data-aos="fade-up") FREE OF
+                            .free-of-svgs
+                                img(src="assets/img/flavor/svg/plant.svg", alt="" data-aos="fade-up")
+                                img(src="assets/img/flavor/svg/non-gmo.svg", alt="" data-aos="fade-up")
+                                img(src="assets/img/flavor/svg/dairy.svg", alt="" data-aos="fade-up")
+
+                                img(src="assets/img/flavor/svg/soy.svg", alt="" data-aos="fade-up")
+                                img(src="assets/img/flavor/svg/gluten.svg", alt="" data-aos="fade-up")
+                                img(src="assets/img/flavor/svg/grain.svg", alt="" data-aos="fade-up")
+                                
+                                img(src="assets/img/flavor/svg/wheat.svg", alt="" data-aos="fade-up")
+                                img(src="assets/img/flavor/svg/corn.svg", alt="" data-aos="fade-up")
+                                img(src="assets/img/flavor/svg/egg.svg", alt="" data-aos="fade-up")
+
+                                img(src="assets/img/flavor/svg/canola.svg", alt="" data-aos="fade-up")
+                                img(src="assets/img/flavor/svg/safflower.svg", alt="" data-aos="fade-up")
+                                img(src="assets/img/flavor/svg/sunflower.svg", alt="" data-aos="fade-up")
+                                
+                                img(src="assets/img/flavor/svg/no-artificial.svg", alt="" data-aos="fade-up")
+
+                        img.cheese-fries(src="assets/img/flavor/cheese-fries-full.png", alt="fries" data-aos="slide-right")
+                        img.cheese-chips(src="assets/img/flavor/chips-full.png", alt="chips" data-aos="slide-left")
+                        img.pretzles(src="assets/img/flavor/pretzles-full.png", alt="pretzles" data-aos="slide-right")
+                        img.cheese(src="assets/img/flavor/cheese-full.png", alt="sauce" data-aos="slide-left")
+
+                .section-try-it
+                    a(href="#") 
+                        button TRY IT ON &#9660;
+                    img(src="assets/img/flavor/svg/try-it-on.svg", alt="try" data-aos="fade-up")
+
+                include includes/gallery                    
+
+            //- ========== FOOTER ============
+            //- ==============================
+            include includes/footer

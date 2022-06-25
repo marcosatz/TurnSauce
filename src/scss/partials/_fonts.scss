@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'AcuminProCond-Bold';
+    src: url("../../fonts/AcuminProCond-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'AcuminProCond-Regular';
+    src: url("../../fonts/AcuminProCond-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'gotham';
+    src: url("../../fonts/GothamHTF-Book.ttf");
+}
+
+@font-face {
+    font-family: 'stamPete';
+    src: url("../../fonts/stamPete.ttf");
+}
+
+$acumin: 'AcuminProCond-Bold';
+$acuminR: 'AcuminProCond-Regular';
+$stamPete: 'stamPete';
+$gotham: 'gotham';
+$bold: 700;
+$regular: 400;
+$light: 200;
+

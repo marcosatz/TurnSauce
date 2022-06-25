@@ -1,0 +1,119 @@
+#turnt-our-story {
+    .section-hero {
+        height: 513px;
+        margin: 0 auto;
+        padding-top: 50px;
+        margin-bottom: 500px;
+        text-align: center;
+
+        @include media (xl-max) {
+            height: 42.5vw;
+            margin-bottom: 42.5vw;
+        }
+
+        .our-story-title {
+            width: 90%;
+            margin: 0 auto;
+
+            @include media (xl-max) {
+                width: 80vw;
+            }
+        }
+
+        .our-story {
+            height: auto;
+            position: absolute;
+            width: 1680px;
+            left: -194px;
+            top: 100%;
+
+            @include media (xl-max) {
+                width: 140vw;
+                left: -16vW;
+                top: 21.3vw;
+            }
+        }
+
+        .cheese {
+            position: absolute;
+            top: 137%;
+            left: -402px;
+            width: 590px;
+
+            @include media (xl-max) {
+                top: 29.3vw;
+                left: -33vw;
+                width: 48.8vw;
+            }
+        }
+
+        .chips {
+            position: absolute;
+            width: 719px;
+            right: -471px;
+            top: 68%;
+            
+            @include media (xl-max) {
+                width: 60vw;
+                right: -39.5vw;
+                top: 14.2vw;
+            }
+        }
+    }
+
+    .section-story {
+        padding-bottom: 50px;
+        
+        p {
+            width: 80%;
+            margin: 0 auto;
+            color: $white;
+            font-family: $acuminR;
+            font-size: 22px;
+            letter-spacing: 2px;
+            line-height: 48px;
+            margin-bottom: 50px;
+
+            @include media(xl-max) {
+                width: 71vw;
+                font-size: 1.83vw;
+                letter-spacing: 0.16vw;
+                line-height: 4vw;
+                margin-bottom: 5vw;
+            }
+
+            @include media(md-max) {
+                width: 80vw;
+                font-size: 4vw;
+                letter-spacing: 0.50vw;
+                line-height: 7vw;
+            }
+        }
+
+        .left-chips {
+            position: absolute;
+            width: 1439px;
+            left: -1270px;
+            bottom: -486px;        
+
+            @include media (xl-max) {
+                width: 122.5vw;
+                left: -108.5vw;
+                bottom: -39.5vw;
+            }
+        }
+
+        .right-cheese {
+            position: absolute;
+            width: 661px;
+            top: 352px;
+            right: -442px;
+
+            @include media (xl-max) {
+                width: 55vw;
+                top: 31vw;
+                right: -37vw;
+            }
+        }
+    }
+}

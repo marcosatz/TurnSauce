@@ -1,0 +1,245 @@
+#turnt-contact {
+    .section-contact {
+        height: 500px;
+
+        @include media (xl-max) {
+            height: 42vw;
+        }
+
+        .contact-fries {
+            width: 1432px;
+            position: absolute;
+            top: -984px;
+            left: -123px;
+            z-index: -1;
+
+            @include media (xl-max) {
+                width: 119vw;
+                top: -82vw;
+                left: -10vw;
+            }
+        }
+
+        .spicy-icon {
+            width: 221px;
+            position: absolute;
+            top: 234px;
+            right: 192px;
+            transform: rotate(-26deg);
+
+            @include media (xl-max) {
+                width: 18vw;
+                top: 19vw;
+                right: 16vw;
+            }
+        }
+
+        .cheese {
+            width: 709px;
+            position: absolute;
+            top: 290px;
+            left: -583px;
+
+            @include media (xl-max) {
+                width: 60vw;
+                top: 25vw;
+                left: -49vw;
+            }
+        }
+    }
+
+    .contact-title {
+        width: 59%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 50px;
+
+        @include media (xl-max) {
+            width: 59vw;
+            padding-bottom: 5vw;
+        }
+
+        @include media (md-max) {
+            width: 70vw;
+        }
+
+
+        h1 {
+            font-family: $stamPete;
+            color: $turnt-yellow;
+        }
+
+        p {
+            color: $white;
+            font-family: $acuminR;
+            font-size: 21px;
+            letter-spacing: 2px;
+
+            @include media (xl-max) {
+                font-size: 1.9vw;
+                letter-spacing: 0.1vw;
+            }
+
+            @include media (md-max) {
+                font-size: 4vw;
+            }
+        }
+
+        .mb-20 {
+            margin-bottom: 20px;
+
+            @include media (xl-max) {
+                margin-bottom: 2vw;
+            }
+        }
+    }
+
+    .section-form {
+        margin-bottom: 150px;
+        .contact-form {
+            width: 80%;
+            margin: 0 auto;
+
+            label {
+                font-family: $stamPete;
+                font-size: 25px;
+                font-weight: $regular;
+                color: $turnt-yellow;
+                text-transform: uppercase;
+                
+                @include media (xl-max) {
+                    font-size: 2vw;
+                }
+
+                @include media (md-max) {
+                    font-size: 4vw;
+                }
+            }
+
+            input {
+                width: 100%;
+                height: 35px;
+                background-color: transparent;
+                border: none;
+                border: solid 1px $white;
+                margin-bottom: 20px;
+                margin-top: 10px;
+                color: $white;
+                font-family: $acuminR;
+                font-size: 18px;
+                padding-left: 10px;
+
+                @include media (xl-max) {
+                    height: 3vw;
+                    margin-bottom: 2vw;
+                    margin-top: 0.5vw;
+                    font-size: 1.6vw;
+                }
+
+                @include media (md-max) {
+                    height: 6vw;
+                    margin-bottom: 2.5vw;
+                    margin-top: 1.5vw;
+                    font-size: 3.2vw;
+                }
+            }
+
+            .select {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-left: .8vw solid transparent;
+                    border-right: .8vw solid $turnt-darken;
+                    border-top: .8vw solid #edcc14;
+                    position: absolute;
+                    top: 25px;
+                    transform: translateY(-50%);
+                    right: 7px;
+                    z-index: 1000;
+
+                    @include media (xl-max) {
+                        top: 1.9vw;
+                        right: 0.6vw;
+                    }
+
+                    @include media (md-max) {
+                        top: 4.4vw;
+                        right: 0.9vw;
+                        border-left: 1.5vw solid transparent;
+                        border-right: 1.5vw solid $turnt-darken;
+                        border-top: 1.5vw solid #edcc14;
+                    }
+                }
+                
+                select {
+                    @extend input;
+                }
+            }
+
+            textarea {
+                @extend input;
+                height: 240px;
+
+                @include media (xl-max) {
+                    height: 20vw;
+                }
+            }
+
+            button {
+                margin: 0 auto;
+                background-color: $turnt-yellow;
+                color: $turnt-dark;
+                font-family: $stamPete;
+                display: block;
+                font-size: 18px;
+                margin-top: 30px;
+                height: 70px;
+                
+                &:hover {
+                    background-color: transparent;
+                    color: $turnt-yellow;
+                }
+                
+                @include media (xl-max) {
+                    font-size: 1.6vw;
+                    margin-top: 2vw;
+                    height: 6vw;
+                }
+
+                @include media (md-max) {
+                    width: 22vw;
+                    font-size: 1.6vw;
+                    margin-top: 2vw;
+                    height: 6vw;
+                }
+            }
+
+            span {
+                color: $turnt-red;
+            }
+
+            .required {
+                color: $turnt-yellow;
+                float: right;
+                text-transform: uppercase;
+            }
+
+            .chips-right {
+                position: absolute;
+                width: 890px;
+                bottom: -337px;
+                right: -598px;
+
+                @include media (xl-max) {
+                    width: 74vw;
+                    bottom: -28vw;
+                    right: -50vw;
+                }
+            }
+            
+        }
+    }
+}

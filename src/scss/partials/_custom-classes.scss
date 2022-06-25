@@ -1,0 +1,142 @@
+$turnt-yellow: #f7d84e;
+$turnt-red: #f8562b;
+$turnt-dark: #261e20;
+$turnt-darken: #171213;
+
+.bg-yellow 		{ background-color : $turnt-yellow; }
+.bg-red 		{ background-color : $turnt-red; }
+.bg-dark 		{ background-color : $turnt-dark; }
+.bg-darken 		{ background-color : $turnt-darken; }
+.bg-white 		{ background-color : #fff; }
+.bg-black 		{ background-color : #000; }
+
+.color-yellow 	{ color : $turnt-yellow; }
+.color-red 		{ color : $turnt-red; }
+.color-dark 	{ color : $turnt-dark; }
+.color-darken 	{ color : $turnt-yellow; }
+.color-white 	{ color : #fff; }
+.color-black 	{ color : #000; }
+
+.fill-yellow 	{fill : $turnt-yellow !important; }
+.fill-red 		{fill : $turnt-red !important; }
+.fill-dark 		{fill : $turnt-dark !important; }
+// .fill-darken 	{fill : $turnt-darken !important; }
+.fill-white 	{fill : #fff !important; }
+.fill-black 	{fill : #000 !important; }
+
+.cover-img {
+	background-size: cover;
+	background-position: center center;
+	background-repeat:  no-repeat;
+}
+
+.body-img {
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.home-cover-img { background-image: url('img/home-bg.svg'); background-position: center -20vw; }
+.our-story-cover-img { background-image: url('img/our-story-bg.svg'); }
+.flavor-cover-img { background-image: url('img/flavor-bg.svg'); background-position: center -5vh; }
+.contact-cover-img { background-image: url('img/contact-bg.svg'); background-position: center -5vh; }
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.clearfix {
+	zoom: 1;
+
+	&::before, &::after {
+		content: "";
+		display: table;
+	}	
+
+	&::after {
+		clear: both;
+	}
+}
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.w-100 { width: 100%; }
+
+.logo-red {
+	path, polygon, rect {
+		fill: $turnt-red;
+	}
+}
+
+.center-menu-mobile {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ff-acumin {
+	// font-family: $ff-acumin;
+}
+
+.d-xxxl-none {
+	@include media(xxxl-min) {
+		display: none !important;
+	}
+}
+
+.d-xxxl-block {
+	@include media(xxxl-min) {
+		display: block !important;
+	}
+}
+
+.show-in-xxxl {
+	opacity: 0;
+	@include media(xxxl-min) {
+		opacity: 1;
+	}
+}
+
+.hide-in-xxxl {
+	opacity: 1;
+	@include media(xxxl-min) {
+		opacity: 0;
+	}
+}
+
+.transition {
+	transition: width 300ms ease-in-out;
+}
+
+.turnt-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: 576px) {
+        max-width: 540px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 720px;
+    }
+
+    @media screen and (min-width: 992px) {
+        max-width: 960px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1140px;
+    }
+
+    @media screen and (min-width: 1400px) {
+        max-width: 1250px;
+    }
+}

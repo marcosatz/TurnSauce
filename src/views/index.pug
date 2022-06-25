@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Home | Turnt Sauce
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
+		link(rel="stylesheet", href="assets/css/aos.css")
+		link(rel="stylesheet", href="assets/css/style.css")
+	body
+
+		style.
+			@font-face {
+				font-family: 'stamPete';
+				src: url("assets/fonts/stamPete.eot") format("eot");
+				src: url("assets/fonts/stamPete.otf");
+				src: url("assets/fonts/stamPete.ttf");
+				src: url("assets/fonts/stamPete.woff");
+			}
+
+
+		div.turnt-sauce-overflow
+
+			//- ========== HEADER ============
+			//- ==============================
+			include includes/header
+
+			//- ========== MAIN ==============
+			//- ==============================
+			main#turnt-home
+
+				.section-hero
+					.turnt-container
+						.hero-content
+							.main-image
+								img(src="assets/img/home/hero-img.png", alt="hero-image" data-aos="zoom-in")
+
+							.turnt-items
+								.item.cover-img(style="background-image: url('assets/img/turnt-item.png')" data-aos="zoom-in" data-aos-duration="300")
+									p PLANTS <br> BASED
+								
+								.item.cover-img(style="background-image: url('assets/img/turnt-item.png')" data-aos="zoom-in" data-aos-duration="500")
+									p SOY <br> FREE
+								
+								.item.cover-img(style="background-image: url('assets/img/turnt-item.png')" data-aos="zoom-in" data-aos-duration="700")
+									p DAIRY <br> FREE
+						
+
+						img.image-cheese(src="assets/img/home/cheese-left-full.png", alt="cheese" data-aos="slide-right" )
+						img.image-pretzles(src="assets/img/home/pretzles-right-full-desktop.png", alt="pretzles" data-aos="slide-left")
+						img.turnt-image3(src="assets/img/turnt-3.png", alt="turnt-3" )
+
+				.section-we-are-cheeze 
+					.turnt-container
+						.story
+							h1 WE ARE CHEEZE REINVENTED
+							p(data-aos="fade-up") For even the greatest creations, evolution is necessary. We are cheeze reinvented. Each squeeze is a trip down memory lane to the ballpark and movie snacks of yesteryear. Your health is essential to your personal evolution, now your taste buds will gladly join the movement. You are not average, and this is NOT-CHO average cheeze sauce.
+							a(href="#") 
+								button(data-aos="fade-up") VEW THE FULL STORY
+
+						img.image-chips(src="assets/img/home/chips-full.png", alt="cheeps" data-aos="slide-left")
+
+				.section-under-100
+					.turnt-container
+						img.bg-under-100(src="assets/img/bg-under-100.png", alt="bg")
+						
+						img.image-under-100(src="assets/img/home/Under 100 Calories Icon@2x.png", alt="" data-aos="zoom-in" data-aos-duration="2500")
+
+						img.image-cheese-fries(src="assets/img/home/cheese-fries-full.png", alt="" data-aos="slide-right")
+						
+						img.image-cheese-bottle(src="assets/img/home/bottle-mobile.png", alt="" data-aos="zoom-in")
+
+				include includes/gallery
+
+			//- ========== FOOTER ============
+			//- ==============================
+			include includes/footer

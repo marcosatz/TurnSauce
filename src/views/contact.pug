@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Contact | Turnt Sauce
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
+		link(rel="stylesheet", href="assets/css/aos.css")
+		link(rel="stylesheet", href="assets/css/style.css")
+
+		style.
+			body {
+				background-image: url(assets/img/contact-bg.svg);
+			}
+
+	body.cover-img
+
+		div.turnt-sauce-overflow
+
+			//- ========== HEADER ============
+			//- ==============================
+			include includes/header
+
+			//- ========== MAIN ==============
+			//- ==============================
+			main#turnt-contact
+				.section-contact
+					.turnt-container
+						img.contact-fries(src="assets/img/contact/cheese-fries-full.png", alt="fries" data-aos="zoom-in" data-aos-duration="700")
+						img.spicy-icon(src="assets/img/contact/svg/spicy-icon.svg", alt="spicy" data-aos="zoom-in")
+						img.cheese(src="assets/img/contact/cheese-full.png", alt="cheese" data-aos="slide-right")
+
+				.contact-title
+					h1(data-aos="fade-up") CONTACT
+					p(data-aos="fade-up").mb-20 We’re happy to answer any questions and listen to any suggestions you have.
+					p(data-aos="fade-up") Just send us a message in the form below. Our team will answer you <br> as soon as possible.
+
+				.section-form
+					.turnt-container
+						.contact-form
+							form(action="" data-aos="fade-up")
+								label(for="") FULL NAME <span class="required">REQUIRED<span>*</span> </span>
+								input(type="text")
+
+								label(for="") LAST NAME<span>*<span>
+								input(type="text" required)
+								
+								label(for="") COMPANY NAME<span>*<span>
+								input(type="text" required)
+								
+								label(for="") EMAIL<span>*<span>
+								input(type="text" required)
+								
+								label(for="") PHONE
+								input(type="text")
+								
+								label(for="") ADRESS 1<span>*<span>
+								input(type="text" required)
+								
+								label(for="") ADRESS 2
+								input(type="text")
+								
+								label(for="") CITY<span>*<span>
+								input(type="text" required)
+								
+								label(for="") STATE/PROVINCE<span>*<span>
+								.select
+									select(name="Select" required)
+										option(value="Alabama") Alabama
+										option(value="Alabama") value 2
+										option(value="Alabama") value 3
+								
+								label(for="") COUNTRY
+								input(type="text")
+								
+								label(for="") ZIP/POSTAL CODE<span>*<span>
+								input(type="text" required)
+								
+								label(for="") HOW DID YOU HEAR ABOUT US?
+								.select
+									select(name="")
+										option(value="Alabama") Magazine
+								
+								label(for="") I AM
+								.select
+									select(name="")
+										option(value="Alabama") Consumer
+
+								label(for="") MESSAGE
+								textarea(name="message")
+
+								button(type="submit" value="Submit") Submit
+
+							
+							img.chips-right(src="assets/img/contact/chips-cheese-full.png", alt="chips" data-aos="slide-left")
+
+
+				include includes/gallery
+
+			//- ========== FOOTER ============
+			//- ==============================
+			include includes/footer

@@ -1,0 +1,19 @@
+// speed up aos animation
+[data-aos][data-aos][data-aos-duration="1000"],
+body[data-aos-duration="1000"] [data-aos] {
+	transition-duration: .4s;
+}
+
+main {
+	//overflow-x: hidden;
+}
+
+#content {
+	.section-under-100 {
+		padding-bottom : 88.5%;
+		
+		@include media(md-max) {
+			padding-bottom: 154%;
+		}
+	}
+}

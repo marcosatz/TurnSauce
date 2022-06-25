@@ -1,0 +1,333 @@
+#turnt-flavor {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    .section-hero {
+        height: 675px;
+
+        @include media(xl-max) {
+            height: 58vw;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: 70px;
+            margin-bottom: 10px;
+            position: absolute;
+            right: 95px;
+            top: 65px;
+            
+            @include media(xl-max) {
+                right: 8vw;
+                top: 6.5vw;
+            }
+
+            .logo {
+                img {
+                    width: 110px;
+                    margin-bottom: 22px;
+
+                    @include media (xl-max) {
+                        width: 9vw;
+                        margin-bottom: 2vw;
+                    }
+                }
+            }
+
+            .main-image {
+                img {
+                    width: 550px;
+                    margin-bottom: 10px;
+        
+                    @include media (xl-max) {
+                        width: 46vw;
+                        margin-bottom: 1vw;
+                    }
+                }
+            }
+            
+            .turnt-items {
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+
+
+                .item {
+                    position: relative;
+                    width: 80px;
+                    height: 90px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 10px;
+                    word-wrap: break-word;
+
+                    @include media(xl-max) {
+                        width: 6.7vw;
+                        height: 7.5vw;
+                    }
+
+                    @include media(md-max) {
+                        width: 8vw;
+                        height: 9vw;
+                        margin: 0 3px;
+                    }
+
+                    p {
+                        font-family: $acumin;
+                        font-size: 18px;
+                        letter-spacing: 1.2;
+                        text-align: center;
+                        
+                        @include media(xl-max) {
+                            font-size: 1.4vw;
+                        }
+
+                        @include media(md-max) {
+                            font-size: 1.8vw;
+                        }
+                    }
+                        
+                }
+            }
+        }
+
+
+        .calories {
+            width: 200px;
+            position: absolute;
+            left: 33px;
+            top: 49px;
+            
+            @include media (xl-max) {
+                width: 17vw;
+                left: 2.5vw;
+                top: 5vw;
+            }
+        }
+    
+        .buttle {
+            width: 765px;
+            position: absolute;
+            top: 30px;
+            left: -277px;
+
+            @include media(xl-max) {
+                width: 63.8vw;
+                top: 3.8vw;
+                left: -23vw;
+            }
+        }
+
+        .stamp {
+            img {
+                width: 130px;
+                margin-top: 50px;
+
+                @include media (xl-max) {
+                    width: 10.8vw;
+                    margin-top: 4vw;
+                }
+            }
+        }
+    }
+
+    .section-about {
+        height: auto;
+        margin-top: 490px;
+
+        @include media(xl-max) {
+            margin-top: 37vw;
+        }
+
+        .about-content {
+            max-width: 790px;
+            margin: 0 auto;
+
+            @include media (xl-max) {
+                max-width: 66vw;
+            }
+
+            h1 {
+                color: $turnt-yellow;
+                font-family: $stamPete;
+                text-align: center;
+            }
+
+            p {
+                color: $white;
+                font-size: 20px;
+                font-family: $gotham;
+                font-weight: $regular;
+                letter-spacing: 0;
+                line-height: 27px;
+                margin-bottom: 70px;
+
+                @include media (xl-max) {
+                    font-size: 1.65vw;
+                    line-height: 2.5vw;
+                }
+
+                @include media (md-max) {
+                    font-size: 3.6vw;
+                    line-height: 6vw;
+                }
+            }
+
+            .calories-fact {
+                width: 100%;
+                margin-bottom: 70px;
+
+                @include media (xl-max) {
+                    width: 65.2vw;
+                }
+            }
+
+            .free-of-svgs {
+                width: 100%;
+                padding: 0 100px;
+                padding-top: 35px;
+                text-align: center;
+
+                @include media (xl-max) {
+                    width: 65.2vw;
+                    padding: 0 10vw;
+                    padding-top: 3.2vw;
+                }
+                
+                @include media (md-max) {
+                    width: 65vw;
+                    padding: 0 0;
+                }
+
+                img {
+                    width: 130px;
+                    margin: 20px;
+                    
+                    @include media (xl-max) {
+                        width: 11vw;
+                        margin: 1.65vw;
+                    }
+
+                    @include media (md-max) {
+                        width: 15vw;
+                        margin: 2.65vw;
+                    }
+                }
+            }
+        }
+
+        .cheese-fries {
+            position: absolute;
+            width: 977px;
+            top: 6%;
+            left: -619px;
+            z-index: -1;
+
+            @include media (xl-max) {
+                width: 82.3vw;
+                top: 8vw;
+                left: -52.5vw;
+            }
+        }
+
+        .cheese-chips {
+            position: absolute;
+            width: 893px;
+            top: 18%;
+            right: -567px;
+            z-index: -1;
+
+            @include media (xl-max) {
+                width: 75vw;
+                top: 24.8vw;
+                right: -45.99vw;
+            }
+        }
+
+        .pretzles {
+            position: absolute;
+            width: 1323px;
+            bottom: -31%;
+            left: -970px;
+            z-index: -1;
+
+            @include media (xl-max) {
+                width: 107vw;
+                bottom: -40.5vw;
+                left: -78vw;
+            }
+        }
+
+        .cheese {
+            position: absolute;
+            z-index: -1;
+            width: 785px;
+            bottom: -20%;
+            right: -471px;
+
+            @include media (xl-max) {
+                width: 64vw;
+                bottom: -25.5vw;
+                right: -38.5vw;          
+            }
+        }
+    }
+
+    .section-try-it {
+        width: 500px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding-top: 150px;
+        padding-bottom: 200px;
+
+        @include media (xl-max) {
+            width: 80vw;
+            padding-top: 11vw;
+            padding-bottom: 18vw;
+        }
+
+        @include media (md-max) {
+            width: 80vw;
+        }
+
+        button {
+            margin: 0 auto;
+            margin-bottom: 50px;
+            width: 525px;
+            height: 110px;
+            font-size: 25px;
+            letter-spacing: 6px;
+            border: solid 5px;
+
+            @include media(xl-max) {
+                width: 44.2vw;
+                font-size: 2.1vw;
+                height: 9.2vw;
+            }
+        
+            @include media(md-max) {
+                width: 40vw;
+                height: 8vw;
+                font-size: 2vw;
+                letter-spacing: 3px;
+                border: solid 1px;
+            }
+        }
+
+        img {
+            width: 650px;
+            @include media (xl-max) {
+                width: 54vw;
+            }
+        }
+    }
+}
